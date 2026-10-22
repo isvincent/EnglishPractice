@@ -7,7 +7,7 @@
 2. 將index.html、styles.css、app.js、sw.js四個檔案一起覆蓋到原儲存庫根目錄。
 3. 保留原本config.js、manifest.webmanifest、demo.json及assets，不要刪除或換成空白來源。
 4. 等候GitHub Pages部署完成，關閉網站後重新開啟並重新整理。若仍看到舊版，先再重新整理一次，或以無痕視窗確認新版已部署。
-5. 在「顯示與操作設定」最下方看到「連線與本機資料管理」，版本應為2.0.0。
+5. 在「顯示與操作設定」最下方看到「連線與本機資料管理」，版本應為2.0.1。
 6. Apps Script、Google試算表與每日寄信程式均不需要修改或重新部署。
 
 若你先前直接改過app.js中的倒數日期：新版會優先讀取端點targetDate，再讀config.js的targetDate，最後備援2028-12-31。請將自訂日期記到config.js，例如：
@@ -16,7 +16,7 @@
 window.APP_CONFIG = {
   endpoint: '保留原本的Apps Script /exec網址',
   refreshMinutes: 5,
-  targetDate: '2029-01-15'
+  targetDate: '2028-12-31'
 };
 ```
 

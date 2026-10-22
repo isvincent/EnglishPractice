@@ -1,7 +1,7 @@
-/* English Bloom 2.0.0：每個GitHub Pages路徑分開管理快取。 */
+/* English Bloom 2.0.1：每個GitHub Pages路徑分開管理快取。 */
 const SCOPE = new URL(self.registration.scope);
 const PREFIX = 'english-bloom:' + encodeURIComponent(SCOPE.pathname) + ':';
-const CACHE = PREFIX + 'v2-20261022';
+const CACHE = PREFIX + 'v2-20281231-r1';
 const SHELL = ['./','./index.html','./styles.css','./app.js','./config.js',
   './demo.json','./manifest.webmanifest','./assets/garden.svg',
   './assets/icon-192.png','./assets/icon-512.png'];
